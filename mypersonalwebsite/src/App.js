@@ -31,9 +31,13 @@ function App() {
             </div>
           )}
         </div>
+        
+        <div className="NameAndPicture">
+        <img src="mypersonalwebsite\images\selfie.jpeg" alt="Brian's Picture" />
 
-        <img src={name.imagePath} alt="Brian's Picure" />
         <h1>{name.name}</h1>
+        </div>
+
 
         <div className="InfoField">
           <h3>Bio:</h3>
@@ -57,16 +61,49 @@ function App() {
         </div>
 
         <div className="InfoField">
-          <h3>Education</h3>
-          <h5>UBC</h5>
+          <h3>Education:</h3>
+          <h4>UBC</h4>
           <p>2021 - 2022 Managment</p>
           <p>2022 - 2023 Computer Science</p>
 
-          <h5>SFU</h5>
-          <p>2021 - 2022 Managment</p>
-          <p>2022 - 2023 Computer Science</p>
+          <h4>SFU</h4>
+          <p>2023 - Present Software Systems</p>
+        </div>
+
+        <div className="InfoField">
+          <h3>Work Experience:</h3>
+
+          <h4>Speeders Indoor Pro-Karts</h4>
+          <p>2018 - 2019 Mechanic</p>
+          <p>Febuary - September (2021) Team Manager/Mechanic</p>
+
+          <h4>Paylidify</h4>
+          <p>2019-2021 Team Manager</p>
         </div>
         
+        <div className="InfoField">
+          <h3>Programming Skills</h3>
+          <ul>
+            <li>Java
+              <ul>
+                <li>Object Oriented Programming</li>
+                <li>Polymorphism</li>
+                <li>Class Design</li>
+                <li>Spring</li>
+                <li>Swing</li>
+                <li>JUnit</li>
+                <li>FX</li>
+              </ul>
+            </li>
+            <li>JavaScript
+                <ul>
+                  <li>React</li>
+                </ul>
+            </li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
       </header>
     </div>
   );
