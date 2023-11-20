@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: auto; /* This will add a scrollbar when the content overflows the viewport */
 }
 
 .App-logo {
@@ -74,7 +75,7 @@
 .dropdown-menu li {
   padding: 10px;
   cursor: pointer;
-  color: black;
+  /*color: black;*/
 }
 
 /* Show the dropdown menu when isMenuOpen state is true */
