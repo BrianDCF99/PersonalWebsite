@@ -1,6 +1,8 @@
 .App {
   text-align: left;
   overflow: auto; /* This will add a scrollbar when the content overflows the viewport */
+  padding-bottom: 250px;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -15,7 +17,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -77,7 +78,11 @@
 .NameAndPicture {
   padding-top:100px;
   text-align: center;
-  
+}
+
+.NameAndPicture img {
+  border-radius: 50%;
+  border: 5px solid black;
 }
 
 
@@ -85,7 +90,7 @@
   text-align: left;
 }
 
-.InfoField h3 {
+.InfoField h3,.workexp h3 {
   color: #4caf50;
   padding-left: 80px;
 }
@@ -95,7 +100,7 @@
   max-width: 1400px;
 }
 
-.InfoField h4{
+.InfoField h4,.workexp h4 {
   color: #99baaf;
   padding-left: 150px;
 }
@@ -105,7 +110,20 @@
   padding-left: 180px;
 }
 
+.InfoField img{
+  transform: scale(35%);
+}
+
 .secondaryList ul{
   color: white;
   padding-left: 150px;
 }
+
+.logodesc {
+  display: flex;
+}
+ .logodesc img{
+  padding-left: 115px;
+  transform: scale(75%);
+}
+

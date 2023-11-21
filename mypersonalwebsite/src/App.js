@@ -66,17 +66,21 @@ function App() {
           <p>2023 - Present Software Systems</p>
         </div>
 
-        <div className="InfoField">
+        <div className="workexp">
           <h3>Work Experience:</h3>
 
           <h4>Speeders Indoor Pro-Karts</h4>
+          <div className='logodesc'>
           <img src="assets/images/speedersLogo.png" alt="Speeders Logo" />
-          <p>2018 - 2019 Mechanic</p>
-          <p>Febuary - September (2021) Team Manager/Mechanic</p>
+          <p>2018 - 2019 Mechanic<br></br>
+            Febuary - September (2021) Team Manager/Mechanic</p>
+          </div>
 
           <h4>Paylidify</h4>
+          <div className='logodesc'>
           <img src="assets/images/paylidifyLogo.png" alt="Paylidify Logo" />
           <p>2019-2021 Team Manager</p>
+          </div>
         </div>
         
         <div className="InfoField">
@@ -109,8 +113,8 @@ function App() {
 
         <div className='InfoField'>
           <h3>My links</h3>
-          <h4><u>Linkedin</u></h4>
-          <h4><u>Github</u></h4>
+          <img src="assets/images/linkedinLogo.png" alt="Linkedin Logo"></img>
+          <img src="assets/images/githubLogo.jpg" alt="GitHub Logo"></img>
         </div>
       </header>
     </div>
