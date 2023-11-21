@@ -81,8 +81,6 @@
 }
 
 
-
-
 .InfoField{
   text-align: left;
 }
@@ -100,5 +98,14 @@
 .InfoField h4{
   color: #99baaf;
   padding-left: 150px;
+}
 
+.InfoField ul{
+  color: #99baaf;
+  padding-left: 180px;
+}
+
+.secondaryList ul{
+  color: white;
+  padding-left: 150px;
 }
