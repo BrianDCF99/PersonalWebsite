@@ -90,19 +90,14 @@
   text-align: left;
 }
 
-.InfoField h3,.workexp h3 {
+.InfoField h3{
   color: #4caf50;
   padding-left: 80px;
 }
 
 .InfoField p {
-  padding-left: 300px;
-  max-width: 1400px;
-}
-
-.InfoField h4,.workexp h4 {
-  color: #99baaf;
-  padding-left: 150px;
+  padding-left: 285px;
+  max-width: calc(100% - 575px);
 }
 
 .InfoField ul{
@@ -110,20 +105,48 @@
   padding-left: 180px;
 }
 
-.InfoField img{
-  transform: scale(35%);
-}
-
 .secondaryList ul{
   color: white;
-  padding-left: 150px;
 }
 
 .logodesc {
   display: flex;
 }
- .logodesc img{
-  padding-left: 115px;
-  transform: scale(75%);
+
+.logodesc img{
+  transform: scale(50%);
 }
 
+.block {
+  text-align: left;
+}
+
+.block h3{
+  color: #4caf50;
+  padding-left: 80px;
+}
+
+ .block img{
+  transform: scale(50%);
+  border-radius: 30px;
+}
+
+.block ul{
+  color: #99baaf;
+  padding-left: 180px;
+}
+
+.block p {/**/
+  color: white;
+}
+.block a{
+  color:#99baaf;
+  text-decoration: none;
+}
+.block a:hover{
+  text-decoration: underline;
+  color:#af6d4c;
+}
+.block a:visited{
+  text-decoration: none;
+}
