@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Assuming you have a CSS file for styling
+import './App.css';
 
 
 function App() {
@@ -12,29 +12,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="top-right-menu">
-          <button onClick={toggleMenu}>More</button>
-          {isMenuOpen && (
-            <div className="dropdown-menu">
-              {/* Dropdown menu content goes here */}
-              <ul>
-                <li>About</li>
-                <li>Current Projects</li>
-                <li>Work Experience</li>
-                <li>Education</li>
-                <li>Other Links</li>
-              </ul>
-            </div>
-          )}
-        </div>
-        
+
         <div className="NameAndPicture">
         <img src="assets/images/selfie.png" alt="Brian's Picture" />
 
         <h1>Brian Del Carpio</h1>
         </div>
-
-
+        
         <div className="InfoField">
           <h3>Bio:</h3>
           <p>All my life, I grew up playing sports at an elite level. During my time in elementary school, pretty much starting in grade one, I began playing 
@@ -60,14 +44,14 @@ function App() {
         <div className="block">
           <h3>Education:</h3>
           <ul>
-            <a href= "https://www.ubc.ca/"><li>UBC</li></a>
+            <a href= "https://www.ubc.ca/" target="_blank"><li>UBC</li></a>
             <div className='logodesc'>
-            <img src="assets/images/ubclogo.png" alt="UBC Logo" />
+            <a href= "https://www.ubc.ca/" target="_blank"><img src="assets/images/ubclogo.png" alt="UBC Logo" /></a>
             <p><br></br>2021-2022, Managment <br></br><br></br>2022-2023, Computer Science</p>
             </div>
-            <a href= "https://www.sfu.ca/"><li>SFU</li></a>
+            <a href= "https://www.sfu.ca/" target="_blank"><li>SFU</li></a>
             <div className='logodesc'>
-            <img src="assets/images/sfuLogo.png" alt="SFU Logo" />
+            <a href= "https://www.sfu.ca/" target="_blank"><img src="assets/images/sfuLogo.png" alt="SFU Logo" /></a>
             <p><br></br>2023-present, Software Systems</p>
             </div>
           </ul>
@@ -76,16 +60,21 @@ function App() {
         <div className="block">
           <h3>Work Experience:</h3>
           <ul>
-            <a href= "google.com"><li>Speeders Indoor Pro-Karts</li></a>
+            <a href= "https://speeders.ca/" target="_blank"><li>Speeders Indoor Pro-Karts</li></a>
             <div className='logodesc'>
-              <img src="assets/images/speederslogo.png" alt="Speeders Logo" />
+            <a href= "https://speeders.ca/" target="_blank"><img src="assets/images/speederslogo.png" alt="Speeders Logo"  /></a>
               <p><br></br>2018 - 2019 Mechanic<br></br><br></br>
               Febuary - September (2021) Team Manager/Mechanic</p>
             </div>
-            <a href= "google.com"><li>Paylidify</li></a>
+            <a href= "https://paylidify.com/ca-en/" target="_blank"><li>Paylidify</li></a>
             <div className='logodesc'>
-              <img src="assets/images/paylidifyLogo.png" alt="paylidify Logo" />
-              <p>2023 - Present Software Systems</p>
+            <a href= "https://paylidify.com/ca-en/" target="_blank"><img src="assets/images/paylidifyLogo.png" alt="paylidify Logo" /></a>
+              <p><br></br>2019-2021, Team Manager</p>
+            </div>
+            <li>DC Goalkeeping Academy</li>
+            <div className='logodesc'>
+              <img src="assets/images/dcga.png" alt="DC Goalkeeping Academy Logo" />
+              <p><br></br>2021-2023, Owner (Not Active anymore)</p>
             </div>
           </ul>
         </div>
@@ -124,18 +113,20 @@ function App() {
         <div className="block">
           <h3>Current Projects:</h3>
           <ul>
-            <a href= "google.com"><li>Personal Website</li></a>
-            <a href= "google.com"><li>ExtraSize</li></a>
+            <a href= "https://github.com/BrianDCF99/PersonalWebsite" target="_blank"><li>Personal Website</li></a>
+            <p></p>
+            <a href= "https://github.com/IanWu1992/cmpt_276_project_group_20" target="_blank"><li>ExtraSize</li></a>
           </ul>
         </div>
+        </header>
 
-
-        <div className='block'>
-          <h3>My links:</h3>
-          <a href= "google.com"><img src="assets/images/linkedinLogo.png" alt="Linkedin Logo"></img></a>
-          <a href= "google.com"><img src="assets/images/githubLogo.jpg" alt="GitHub Logo"></img></a>
+      <footer class="footer">
+      <div className='block'>
+          <a href= "https://www.linkedin.com/in/brian-del-carpio-b0291625b/" target="_blank"><img src="assets/images/linkedinLogo.png" alt="Linkedin Logo"></img></a>
+          <a href= "https://github.com/BrianDCF99" target="_blank"><img src="assets/images/githubLogo.jpg" alt="GitHub Logo"></img></a>
         </div>
-      </header>
+      </footer>
+
     </div>
   );
 }

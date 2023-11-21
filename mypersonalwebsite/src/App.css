@@ -1,7 +1,6 @@
 .App {
   text-align: left;
-  overflow: auto; /* This will add a scrollbar when the content overflows the viewport */
-  padding-bottom: 250px;
+  overflow: auto; 
   background-color: #282c34;
 }
 
@@ -29,52 +28,6 @@
   color: #61dafb;
 }
 
-/* Add styles for the top-right menu container */
-.top-right-menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-/* Style the button */
-.top-right-menu button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Style the dropdown menu */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 45px; /* Adjust this value based on your design */
-  right: 0;
-  background-color: #99baaf;
-  min-width: 250px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-menu li {
-  padding: 10px;
-  cursor: pointer;
-  /*color: black;*/
-}
-
-/* Show the dropdown menu when isMenuOpen state is true */
-.top-right-menu:hover .dropdown-menu,
-.dropdown-menu:hover {
-  display: block;
-}
-
 .NameAndPicture {
   padding-top:100px;
   text-align: center;
@@ -84,7 +37,6 @@
   border-radius: 50%;
   border: 5px solid black;
 }
-
 
 .InfoField{
   text-align: left;
@@ -140,13 +92,24 @@
   color: white;
 }
 .block a{
+  display: inline-block;
   color:#99baaf;
   text-decoration: none;
 }
 .block a:hover{
   text-decoration: underline;
   color:#af6d4c;
+  .block img{
+    opacity: 0.8;
+  }
 }
 .block a:visited{
   text-decoration: none;
+}
+
+.footer{
+  padding-top: 100px;
+  padding-left: 25%;
+  background-color: #0f1013;
+  min-height: 300px;
 }
