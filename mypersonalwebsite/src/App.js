@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'; // Assuming you have a CSS file for styling
 
-const name = {
-  name: 'Brian Del Carpio',
-  imagePath: '../images/Selfie.jpg',
-};
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +29,9 @@ function App() {
         </div>
         
         <div className="NameAndPicture">
-        <img src="mypersonalwebsite\images\selfie.jpeg" alt="Brian's Picture" />
+        <img src="assets/images/selfie.png" alt="Brian's Picture" />
 
-        <h1>{name.name}</h1>
+        <h1>Brian Del Carpio</h1>
         </div>
 
 
@@ -74,10 +70,12 @@ function App() {
           <h3>Work Experience:</h3>
 
           <h4>Speeders Indoor Pro-Karts</h4>
+          <img src="assets/images/speedersLogo.png" alt="Speeders Logo" />
           <p>2018 - 2019 Mechanic</p>
           <p>Febuary - September (2021) Team Manager/Mechanic</p>
 
           <h4>Paylidify</h4>
+          <img src="assets/images/paylidifyLogo.png" alt="Paylidify Logo" />
           <p>2019-2021 Team Manager</p>
         </div>
         
@@ -85,24 +83,34 @@ function App() {
           <h3>Programming Skills</h3>
           <ul>
             <li>Java
-              <ul>
-                <li>Object Oriented Programming</li>
-                <li>Polymorphism</li>
-                <li>Class Design</li>
-                <li>Spring</li>
-                <li>Swing</li>
-                <li>JUnit</li>
-                <li>FX</li>
-              </ul>
+              <div className="secondaryList">
+                <ul>
+                  <li>Object Oriented Programming</li>
+                  <li>Polymorphism</li>
+                  <li>Class Design</li>
+                  <li>Spring</li>
+                  <li>Swing</li>
+                  <li>JUnit</li>
+                  <li>FX</li>
+                </ul>
+              </div>
             </li>
             <li>JavaScript
+            <div className="secondaryList">
                 <ul>
                   <li>React</li>
                 </ul>
+            </div>    
             </li>
             <li>HTML</li>
             <li>CSS</li>
           </ul>
+        </div>
+
+        <div className='InfoField'>
+          <h3>My links</h3>
+          <h4><u>Linkedin</u></h4>
+          <h4><u>Github</u></h4>
         </div>
       </header>
     </div>
